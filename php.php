@@ -1,4 +1,4 @@
-
+---------------------- tag and comment
 
 ===> tag php
 <?php ?>
@@ -14,6 +14,7 @@
 	content comment
 */
 
+----------------------- display
 //===> show string
 echo "content string";
 
@@ -26,18 +27,11 @@ echo $variabel;
 //===> mix variabel and string
 echo "test ".$variabel." test2";
 
+------------------------ Array
 //===> all about array
 //http://www.codedoct.com/2016/09/what-is-array.html
 
-//===> show array element
-$array1 = array('a', 'b', 'c', 'd');
-echo $array1[2];
-output:
-c
-
-//////////
-// LOOP //
-//////////
+------------------------- loop
 //===> for
 for ($i = 2; $i < 11; $i = $i + 2) {
   echo $i;
@@ -86,9 +80,8 @@ do {
 output:
 The loop ran even though the loop condition is false.
 
-//////////////
-// function //
-//////////////
+
+----------------------------- library
 //===> length
 $length = strlen("sayah");
 echo $length;
@@ -111,6 +104,7 @@ output:
 ark
 DARK KING
 dark king
+
 
 //===> find position
 $myname = "Dark King";
@@ -137,34 +131,13 @@ output:
 4
 n
 
-//===> array push
-$apalah = array();
-array_push($apalah, "hallo");
-array_push($apalah, "aloha");
-array_push($apalah, "hai");
-array_push($apalah, "hoii");
-array_push($apalah, "yaaa!");
-print count($apalah);
-output:
-5
-
-//===> array sort, reverse, join
-$the_array = array("asd", "sdas", "dsa", "qwerq");
-sort($the_array);
-print join(",",$the_array);
-
-rsort($the_array);
-print join("::", $the_array);
-output:
-asd,dsa,qwerq,sdas
-sdas::qwerq::dsa::asd
-
 //===> length string
 $name = "Dark King";
 echo strlen($name);
 output:
 9
 
+--------------------------------- function
 //===> play with function
 function greetings($name){
     echo "Greetings, " . $name . "!";
