@@ -14,9 +14,11 @@ $ git commit -m " " => commit ke log github dengan comment
 $ git log => melihat log github
 
 $ git checkout -f => kembalikan perubahan
-$ git checkout (master/branch) => pindah branch
-$ git branch -D => delete branch
-$ git checkout-b => menambah branch baru
+$ git checkout (nama_branch) => pindah branch
+$ git branch -d (nama_branch) => delete branch local yang belum di push
+$ git branch -D (nama_branch) => delete branch yang sudah di push
+$ git push origin :(nama_branch) => delete branch remote
+$ git checkout -b (nama_branch) => menambah branch baru
 $ git checkout . => hapus semua perubahan
 
 $ git remote add origin https://github.com/username/project.git => with login
